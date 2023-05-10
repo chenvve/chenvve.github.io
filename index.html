@@ -12,29 +12,31 @@
       body {
         transform: translate(200px, 100px);
       }
-      .container {
-        overflow: hidden; /* 隐藏容器中溢出的内容 */
+      .container::after {
+        content: "";
+        display: table;
+        clear: both;
       }
       .image {
         float: left; /* 左浮动 */
         margin-right: 20px; /* 图像右侧留出一些空白 */
       }
+      .additional-text,
       .details {
-        margin-left: 180px; /* 右浮动，距离左边图像的右侧一定间距 */
-        transform: translate(50px, -100px);
+        float: left;
       }
-       .additional-text {
-         float: left;
-         /*清除浮动clear: both;*/
-        margin-top: 10px; /*在图片下方添加一些间距*/
+
+      .details {
+        margin-left: 50px;
       }
+       
     </style>
   </head>
   <body>
     <div class="container">
     <img src="figs/zjz-min.png" alt="Image" width="150" height="200" class="image">
     <div class="additional-text">
-    <p>Here is some </p>
+    <p>Here is ooooo </p>
     </div>
     <div class="details">
     <h1>Chen Wenxin</h1>
