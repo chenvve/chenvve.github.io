@@ -12,16 +12,17 @@
       body {
         transform: translate(200px, 100px);
       }
-      .container::after {
-        content: "";
-        display: table;
-        clear: both;
+      .container {
+        overflow: hidden;
       }
       .image {
         float: left; /* 左浮动 */
         margin-right: 20px; /* 图像右侧留出一些空白 */
       }
-      
+      .details {
+        margin-left: 180px; /* 右浮动，距离左边图像的右侧一定间距 */
+        transform: translate(50px, 0px);
+      }
     </style>
   </head>
   <body>
