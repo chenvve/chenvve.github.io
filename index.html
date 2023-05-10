@@ -9,10 +9,22 @@
       .category {
         text-align: center;
       }
+      .container {
+        overflow: hidden; /* 隐藏容器中溢出的内容 */
+      }
+      .image {
+        float: left; /* 左浮动 */
+        margin-right: 20px; /* 图像右侧留出一些空白 */
+      }
+      .details {
+        margin-left: 180px; /* 右浮动，距离左边图像的右侧一定间距 */
+      }
     </style>
   </head>
   <body>
-    <img src="figs/zjz-min.png" alt="Image" width="150" height="200">
+    <div class="container">
+    <img src="figs/zjz-min.png" alt="Image" width="150" height="200" class="image">
+    <div class="details">
     <h1>Chen Wenxin</h1>
     <h2 class="category">Research Interest</h2>
     <ul>
@@ -50,5 +62,7 @@
     <li>2020: 中国智能机器人格斗大赛 三等奖 </li>
     <li>2018: 北京市大学生电子设计竞赛 三等奖 </li>
     </ul>
+  </div>
+  </div>
   </body>
 </html>
